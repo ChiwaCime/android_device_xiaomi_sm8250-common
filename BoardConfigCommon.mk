@@ -27,9 +27,6 @@ AB_OTA_PARTITIONS += \
     vendor_boot
 endif
 
-# APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -194,7 +191,7 @@ SOONG_CONFIG_XIAOMI_KONA_ROOTDIR_PARTITION_SCHEME := a
 endif
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-08-01
+VENDOR_SECURITY_PATCH := 2023-03-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
